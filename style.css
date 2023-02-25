@@ -7,6 +7,24 @@
 	width: 100%;
 	background-color: #111;
 	z-index: 100;
+	transition: background-color ease 0.5s;
+}
+
+.header.scrolled {
+	background-color: orange;
+}
+
+.header.scrolled .burger-button span, .header.scrolled .burger-button span::after, .header.scrolled .burger-button span::before {
+	background-color: #111;
+}
+
+.header.scrolled .nav-link:hover {
+	color: #111;
+}
+
+.header.scrolled .header-button:hover {
+	background-color: #111;
+	color: #fff;
 }
 
 .header-wrapper {
@@ -15,12 +33,40 @@
 	justify-content: space-between;
 }
 
+.header-wrapper.active .header-nav {
+	padding: 10px 0;
+	position: absolute;
+	top: 128px;
+	background-color: #111;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.header-wrapper.active .nav-link {
+	margin-bottom: 20px;
+	margin-right: 0;
+}
+
 .header-logo {
 	display: flex;
 	align-items: center;
 	filter: grayscale( 100% );
 	cursor: pointer;
 	transition: filter ease 0.35s;
+	animation: run 1s ease forwards;
+}
+
+@keyframes run {
+	0% {
+		transform: translateX( -100% );
+	}
+
+	100% {
+		transform: translateX( 0% );
+	}
 }
 
 .header-logo-text {
@@ -43,6 +89,17 @@
 @media all and (min-width: 992px) {
 	.header-nav {
 		display: flex;
+		animation: nav-run 3s ease forwards;
+	}
+
+	@keyframes nav-run {
+		0% {
+			transform: translateY( -500% );
+		}
+
+		100% {
+			transform: translateY( 0 );
+		}
 	}
 }
 
@@ -62,6 +119,10 @@
 	margin-right: 0;
 }
 
+.form .button {
+	padding: 10px 100px;
+}
+
 .button {
 	font-family: 'Roboto';
 	font-weight: 500;
@@ -70,7 +131,8 @@
 	padding: 10px 30px;
 	cursor: pointer;
 	border-radius: 10px;
-	transition: background-color ease 0.35s;
+	transition: background-color ease 0.35s,
+				color ease 0.35s;
 }
 
 .button:hover {
@@ -84,6 +146,17 @@
 @media all and (min-width: 992px) {
 	.header-button {
 		display: inline-block;
+		animation: btn-run 3s ease forwards;
+	}
+
+	@keyframes btn-run {
+		0% {
+			transform: translateX( 100% );
+		}
+
+		100% {
+			transform: translateX( 0 );
+		}
 	}
 }
 
@@ -92,6 +165,17 @@
 .hero {
 	padding: 30px 0;
 	background-color: #111;
+	animation: hero 3s ease forwards;
+}
+
+@keyframes hero {
+	0% {
+		opacity: 0;
+	}
+	
+	100% {
+		opacity: 1;
+	}
 }
 
 @media all and (min-width: 992px) {
@@ -179,6 +263,34 @@
 	padding: 30px 0;
 }
 
+.wait.scrolled .wait-item:first-child {
+	animation: wait 3s ease forwards;
+}
+
+@keyframes wait {
+	0% {
+		transform: translateX( -20% );
+	}
+
+	100% {
+		transform: translateX( 0 );
+	}
+}
+
+.wait.scrolled .wait-item:last-child {
+	animation: wait-last 3s ease forwards;
+}
+
+@keyframes wait-last {
+	0% {
+		transform: translateX( 20% );
+	}
+
+	100% {
+		transform: translateX( 0 );
+	}
+}
+
 @media all and (min-width: 992px) {
 	.wait {
 		padding: 50px 0;
@@ -262,6 +374,34 @@
 .learn {
 	padding: 30px 0;
 	background-color: #111;
+}
+
+.learn.scrolled .learn-item:nth-child(2) {
+	animation: learn2 ease 3s forwards;
+}
+
+@keyframes learn2 {
+	0% {
+		transform: translateX( -100% );
+	}
+
+	100% {
+		transform: translateX( 0 );
+	}
+}
+
+.learn.scrolled .learn-item:nth-child(3) {
+	animation: learn3 ease 3s forwards;
+}
+
+@keyframes learn3 {
+	0% {
+		transform: translateX( 100% );
+	}
+
+	100% {
+		transform: translateX( 0 );
+	}
 }
 
 @media all and (min-width: 992px) {
@@ -429,6 +569,20 @@
 	background-color: #111;
 }
 
+.why-we.scrolled .why-we-img {
+	animation: why-we 4s ease forwards;
+}
+
+@keyframes why-we {
+	0% {
+		transform: rotate( 0 );
+	}
+
+	100% {
+		transform: rotate( 360deg );
+	}
+}
+
 @media all and (min-width: 992px) {
 	.why-we {
 		padding: 50px 0;
@@ -501,6 +655,20 @@
 	position: relative;
 	padding: 30px 0;
 	background-color: #111;
+}
+
+.price.scrolled .sale {
+	animation: sale 3s ease forwards ;
+}
+
+@keyframes sale {
+	0% {
+		scale: 0;
+	}
+
+	100% {
+		scale: 1;
+	}
 }
 
 @media all and (min-width: 992px) {
@@ -1026,6 +1194,20 @@ input:last-child {
 	background-color: orange;
 }
 
+.footer.scrolled {
+	animation: foot ease 1s forwards;
+}
+
+@keyframes foot {
+	0% {
+		transform: translateY( 100% );
+	}
+
+	100% {
+		transform: translateY( 0 );
+	}
+}
+
 .footer-wrapper {
 	display: flex;
 	align-items: center;
@@ -1139,4 +1321,18 @@ input:last-child {
 	height: 4px;
 	background-color: gray;
 	border-radius: 10px;
+}
+
+.success, .error {
+	font-family: 'Roboto';
+	font-weight: 500;
+	font-size: 18px;
+	color: orange;
+	text-align: center;
+}
+
+.error {
+	color: red;
+	margin-top: 20px;
+	font-size: 15px;
 }
