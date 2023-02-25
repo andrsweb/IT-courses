@@ -573,7 +573,7 @@
 
 .cash-info {
 	width: 50%;
-	padding-right: 20px;
+	padding-left: 20px;
 }
 
 .cash-title {
@@ -620,4 +620,74 @@
 
 .cash-img img {
 	border-radius: 10px;
+}
+
+/* Feedback styles*/
+.feedback {
+	padding: 50px 0;
+	background-color: rgb(24, 23, 23);
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form h3 {
+	text-align: center;
+}
+
+.form .button {
+	border: 0;
+}
+
+label {
+	font-family: 'Roboto';
+	font-weight: 700;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+fieldset {
+	width: 100%;
+	border: 0;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 50px;
+	padding: 0;
+	max-width: 600px;
+}
+
+input {
+	width: 100%;
+	height: 50px;
+	border: 0;
+	margin-bottom: 30px;
+	font-family: 'Roboto';
+	font-size: 18px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+	color: #fff;
+	background-color: rgb(43, 42, 42);
+}
+
+input::placeholder {
+	opacity: 1;
+}
+
+.text {
+	font-family: 'Roboto';
+	resize: none;
+	min-height: 100px;
+	background-color: rgb(43, 42, 42);
+	border-radius: 12px;
+	border: 0;
+	padding: 10px;
+	color: #fff;
+}
+
+input:last-child {
+	margin-bottom: 0;
 }
