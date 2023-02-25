@@ -292,3 +292,56 @@
 	font-size: 30px;
 	margin-right: 20px;
 }
+
+/* Why-we styles */
+.why-we {
+	padding: 50px 0;
+	background-color: #111;
+}
+
+.why-we h2 {
+	color: #fff;
+}
+
+.why-we-items {
+	margin: 0 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.why-we-item {
+	padding: 0 20px;
+	width: calc( 100% / 4 );
+}
+
+.why-we-inner {
+	padding: 10px;
+	background: rgb(29, 29, 29);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+
+.why-we-img {
+	margin-bottom: 20px;
+}
+
+.why-we-title {
+	font-family: 'Roboto';
+	font-weight: 500;
+	font-size: 22px;
+	color: orange;
+	margin-bottom: 20px;
+}
+
+.why-we-text {
+	font-family: 'Roboto';
+	font-weight: 500;
+	color: #fff;
+	text-align: center;
+	line-height: 1.3;
+}
