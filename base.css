@@ -82,7 +82,7 @@ h2, .h2 {
 	font-style: normal;
 	font-weight: 500;
 	line-height: 1.3;
-	text-align: center;
+	text-align: left;
 	color: #000;
 	margin-bottom: 50px;
 }
@@ -111,6 +111,11 @@ a {
 	display: inline-block;
 	text-decoration: none;
 	transition: color ease-out 0.3s;
+}
+
+img {
+	max-width: 100%;
+	height: auto
 }
 
 p {
