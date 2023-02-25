@@ -112,7 +112,43 @@
 	width: 30%;
 }
 
-.hero-wave {
+/* Wait styles */
+.wait {
+	padding: 50px 0;
+}
+
+.wait-items {
+	display: flex;
+	margin: 0 -20px;
+}
+
+.wait-item {
+	width: calc( 100% / 4 );
+	padding: 0 20px;
+}
+
+.wait-inner {
 	width: 100%;
-	height: auto;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.wait-img {
+	margin-bottom: 10px;
+}
+
+.wait-title {
+	font-family: 'Roboto';
+	font-weight: 500;
+	margin-bottom: 20px;
+	font-size: 25px;
+}
+
+.wait-text {
+	font-family: 'Roboto';
+	font-weight: 400;
+	text-align: center;
+	font-size: 18px;
 }
