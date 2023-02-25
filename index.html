@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="wrapper">
+	<div class="wrapper" id="start">
 		<header class="header">
 			<div class="container">
 				<div class="header-wrapper">
@@ -33,21 +33,24 @@
 						</p>
 					</a>
 					<nav class="header-nav">
-						<a href="#" class="nav-link">
+						<a href="#wait" class="nav-link">
 							Что ожидать?
 						</a>
-						<a href="#" class="nav-link">
+						<a href="#learn" class="nav-link">
 							Чему научитесь?
 						</a>
-						<a href="#" class="nav-link">
+						<a href="#prog" class="nav-link">
 							Программа обучения
 						</a>
-						<a href="#" class="nav-link">
+						<a href="#contacts" class="nav-link">
 							Контакты
 						</a>
 					</nav>
-					<div class="button">
+					<a href="#contacts" class="button header-button">
 						Записаться
+					</a>
+					<div class="burger-button">
+						<span></span>
 					</div>
 				</div>
 			</div>
@@ -66,9 +69,9 @@
 							<p class="hero-text">
 								Записывайтесь, и за 3 месяца вы станете востребованным IT-специалистом со знанием топовых технологий 2023 года и 2 крутыми проектами в портфолио.
 							</p>
-							<div class="button hero-button">
+							<a href="#contacts" class="button hero-button">
 								Записаться
-							</div>
+							</a>
 						</div>
 						<div class="hero-img">
 							<img src="img/hero/hero.png" width="600" height="400" alt="">
@@ -76,7 +79,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="wait">
+			<section class="wait" id="wait">
 				<div class="container">
 					<h2>
 						Что ожидать от обучения?
@@ -137,7 +140,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="learn">
+			<section class="learn" id="learn">
 				<div class="container">
 					<h2>
 						Чему Вы научитесь за 3 месяца
@@ -198,7 +201,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="program">
+			<section class="program" id="prog">
 				<div class="container">
 					<h2>
 						Программа включает в себя:
@@ -350,7 +353,7 @@
 							</p>
 						</div>
 						<div class="sale-up-button">
-							<a href="#" class="button sale-button">
+							<a href="#contacts" class="button sale-button">
 								Записаться
 							</a>
 						</div>
@@ -400,7 +403,7 @@
 							</div>
 							<div class="mentor-inner">
 								<div class="mentor-name">
-									Тимофей Разраб
+									Тимофей Разрабович
 								</div>
 								<div class="mentor-text">
 									--- Software architect в яндекс <br>
@@ -468,7 +471,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="feedback">
+			<section class="feedback" id="contacts">
 				<div class="container">
 					<form class="form feedback-form" data-type="feedback">
 						<h3>
@@ -519,9 +522,9 @@
 							Контакты
 						</a>
 					</nav>
-					<div class="up">
+					<a href="#start" class="up">
 						В начало
-					</div>
+					</a>
 				</div>
 			</div>
 		</footer>
