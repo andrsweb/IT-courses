@@ -719,6 +719,7 @@ input:last-child {
 	color: #fff;
 	background-color: #111;
 	transition: opacity ease 0.35s;
+	cursor: pointer;
 }
 
 .up:hover {
