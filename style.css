@@ -380,6 +380,7 @@
 
 .price-cost {
 	display: flex;
+	justify-content: center;
 	font-family: 'Roboto';
 	font-weight: 500;
 	text-transform: uppercase;
@@ -387,14 +388,13 @@
 
 .price-cost span {
 	color: #fff;
-	margin-right: auto;
 	font-size: 70px;
 	text-shadow: 1px 1px 1px #111;
+	margin-right: 30px;
 }
 
 .price-cost p {
 	color: red;
-	margin-right: auto;
 	font-size: 70px;
 	text-shadow: 1px 1px 1px #111;
 	text-decoration: line-through;
@@ -427,4 +427,42 @@
 	height: 200px;
 	border-radius: 50%;
 	text-align: center;
+}
+
+/* Sale Up styles */
+.sale-up {
+	padding: 50px 0;
+	background-color: #111;
+}
+
+.sale-up .container {
+	max-width: 800px;
+}
+
+.sale-up-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.sale-up-text {
+	font-family: 'Roboto';
+	font-weight: 300;
+	color: #fff;
+}
+
+.sale-up-text span {
+	font-size: 20px;
+	font-weight: 700;
+	color: red;
+}
+
+.sale-up-button {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.sale-up-button .button {
+	padding: 30px 100px;
+	font-size: 25px;
 }

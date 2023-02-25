@@ -94,7 +94,16 @@ h2, .h2 {
 }
 
 h3, .h3 {
-	font-size: 30px
+	font-size: 20px;
+	color: orange;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+@media all and (min-width: 992px) {
+	h3 {
+		font-size: 30px
+	} 
 }
 
 h4, .h4 {
