@@ -1062,7 +1062,8 @@ input:last-child {
 	width: 40px;
 	height: 25px;
 	transition: opacity ease 0.35s;
-	margin-left: auto;
+	border: 0;
+	background: transparent;
 }
 
 @media all and (min-width: 992px) {
@@ -1123,10 +1124,12 @@ input:last-child {
 
 .burger-button span::before {
 	top: 10px;
+	left: 0;
 }
 
 .burger-button span::after {
 	top: 20px;
+	left: 0;
 }
 
 .burger-button span::before, .burger-button span::after {
