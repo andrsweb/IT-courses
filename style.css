@@ -559,3 +559,65 @@
 	justify-content: center;
 	width: 40%;
 }
+
+/* Cash styles */
+.cash {
+	padding: 50px 0;
+	background-color: #111;
+}
+
+.cash-items {
+	display: flex;
+	align-items: center;
+}
+
+.cash-info {
+	width: 50%;
+	padding-right: 20px;
+}
+
+.cash-title {
+	font-family: 'Roboto';
+	font-weight: 500;
+	font-size: 25px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.cash-title h4 {
+	color: #fff;
+	margin-right: 30px;
+	font-size: 40px;
+}
+
+.cash-title p {
+	color: orange;
+}
+
+.cash-title p span {
+	color: #fff;
+	font-size: 15px;
+}
+
+.cash-text {
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 22px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.cash-text:last-child {
+	margin-bottom: 0;
+}
+
+.cash-img {
+	display: flex;
+	justify-content: center;
+	width: 50%;
+}
+
+.cash-img img {
+	border-radius: 10px;
+}
