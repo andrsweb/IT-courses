@@ -39,7 +39,6 @@ li {
 	width: 100%;
 	min-height: 100vh;
 	overflow: hidden;
-	padding-top: 76px;
 }
 
 .footer {
@@ -110,4 +109,11 @@ a {
 
 p {
 	margin: 0;
+}
+
+.container {
+	width: 100%;
+	max-width: 1400px;
+	padding: 0 20px;
+	margin: 0 auto;
 }
