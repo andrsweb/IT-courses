@@ -5,6 +5,8 @@ document.addEventListener( 'DOMContentLoaded', () => {
 	headerScroll()
 	smoothScrollForAnchors()
 	submitForm( '.form' )
+	callRegistrationPopup()
+	callEnterPopup()
 } )
 
 let windowHeight = window.innerHeight
@@ -171,5 +173,61 @@ document.addEventListener( 'scroll', () => {
 		footer.classList.add( 'scrolled' )
 	}
 } )
+
+const callRegistrationPopup = () => {
+	const regButton  = document.querySelector( '.reg' )
+	const regPopup   = document.querySelector( '.reg-popup' )
+	const popupClose = document.querySelector( '.popup-close')
+
+	regButton.addEventListener( 'click', () => {
+		if( ! regPopup.classList.contains( 'opened' ) )
+			regPopup.classList.add( 'opened' )
+	} )
+
+	popupClose.addEventListener( 'click', () => {
+		if( regPopup.classList.contains( 'opened' ))
+		regPopup.classList.remove( 'opened' )
+	} )
+
+	regPopup.addEventListener( 'click', e => {
+		e.stopPropagation()
+
+		const target = e.target
+
+		if ( target.className && target.classList.contains( 'reg-popup' ) ) {
+			regPopup.classList.remove( 'opened' )
+		}
+	} )
+}
+
+const callEnterPopup = () => {
+	const enterButton = document.querySelector( '.enter' ) 
+	const enterPopup  = document.querySelector( '.enter-popup' )
+	const closeButton = document.querySelectorAll( '.popup-close' )
+
+	enterButton.addEventListener( 'click', () => {
+		if( ! enterPopup.classList.contains( 'opened' ) )
+			enterPopup.classList.add( 'opened' )
+	} )
+
+	closeButton.forEach( btn => {
+		btn.addEventListener( 'click', () => {
+			if( enterPopup.classList.contains( 'opened' ))
+			enterPopup.classList.remove( 'opened' )
+		} )
+	} )
+
+	
+
+	enterPopup.addEventListener( 'click', e => {
+		e.stopPropagation()
+
+		const target = e.target
+
+		if ( target.className && target.classList.contains( 'enter-popup' ) ) {
+			enterPopup.classList.remove( 'opened' )
+		}
+	} )
+}
 
 

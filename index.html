@@ -45,13 +45,18 @@
 						<a href="#contacts" class="nav-link anchor">
 							Контакты
 						</a>
+						<div class="account">
+							<div class="reg">
+								Регистрация
+							</div>
+							<div class="enter">
+								<p>Войти</p>
+							</div>
+						</div>
 					</nav>
-					<a href="#contacts" class="button header-button anchor">
-						Записаться
-					</a>
 					<button class="burger-button">
 						<span></span>
-					</и>
+					</button>
 				</div>
 			</div>
 		</header>
@@ -162,7 +167,7 @@
 						<div class="learn-item">
 							<div class="learn-inner">
 								<div class="learn-img">
-									<img src="./img/learn/work.png" width="200" height="200" loading="lazy" alt="" alt="">
+									<img src="./img/learn/work.png" width="200" height="200" loading="lazy" alt="">
 								</div>
 								<div class="learn-title">
 									Workflow
@@ -175,7 +180,7 @@
 						<div class="learn-item">
 							<div class="learn-inner">
 								<div class="learn-img">
-									<img src="./img/learn/app.png" width="200" height="200" loading="lazy" alt="" alt="">
+									<img src="./img/learn/app.png" width="200" height="200" loading="lazy" alt="">
 								</div>
 								<div class="learn-title">
 									SPA-приложение
@@ -188,7 +193,7 @@
 						<div class="learn-item">
 							<div class="learn-inner">
 								<div class="learn-img">
-									<img src="./img/learn/test.png" width="200" height="200" loading="lazy" alt="" alt="">
+									<img src="./img/learn/test.png" width="200" height="200" loading="lazy" alt="">
 								</div>
 								<div class="learn-title">
 									Тестирование
@@ -510,16 +515,16 @@
 						</p>
 					</a>
 					<nav class="header-nav">
-						<a href="#" class="nav-link">
+						<a href="#wait" class="nav-link anchor">
 							Что ожидать?
 						</a>
-						<a href="#" class="nav-link">
+						<a href="#learn" class="nav-link anchor">
 							Чему научитесь?
 						</a>
-						<a href="#" class="nav-link">
+						<a href="#prog" class="nav-link anchor">
 							Программа обучения
 						</a>
-						<a href="#" class="nav-link">
+						<a href="#contacts" class="nav-link anchor">
 							Контакты
 						</a>
 					</nav>
@@ -529,6 +534,71 @@
 				</div>
 			</div>
 		</footer>
+		<div class="reg-popup">
+			<form class="reg-form">
+				<div class="form-title">
+					<img src="img/header/lk.png" width="50" height="50" loading="lazy" alt="">
+					<h4>
+						Регистрация
+					</h4>
+				</div>
+				<fieldset>
+					<label>
+						Введите имя
+					</label>
+					<input class="reg-name" type="text" name="name" placeholder="Введите имя">
+					<label>
+						Введите ваш эмейл
+					</label>
+					<input class="reg-mail0" name="email" class="email" type="email" placeholder="Ваш email">
+					<label>
+						Введите телефон
+					</label>
+					<input class="reg-phone" type="tel" name="phone" placeholder="ххх-ххх-ххх">
+					<label>
+						Введите пароль
+					</label>
+					<input class="reg-pass" type="text" name="pass" placeholder="Введите пароль">
+					<label>
+						Подтвердите ваш пароль
+					</label>
+					<input class="reg-conf" type="text" name="pass-confirm" placeholder="Введите пароль">
+					<label>
+						Ваше кодовое слово
+					</label>
+					<input class="word" type="text" name="pass-word" placeholder="Кодовое слово">
+					<button type="submit" class="button reg-button">
+						Отправить
+					</button>
+					<p class="personal">
+						Нажимая на кнопку, Вы принимаете Положение и Согласие на обработку персональных данных.
+					</p>
+				</fieldset>
+				<div class="popup-close">
+					<span></span>
+				</div>
+			</form>
+		</div>
+		<div class="enter-popup">
+			<form class="reg-form">
+				<div class="form-title">
+					<img src="img/header/enter.png" width="50" height="50" loading="lazy" alt="">
+					<h4>
+						Войти в личный кабинет
+					</h4>
+				</div>
+				<fieldset>
+					<input class="reg-name" type="text" name="name" placeholder="Логин">
+					<input class="reg-mail0" name="email" class="email" type="email" placeholder="Пароль">
+					<button type="submit" class="button reg-button">
+						Войти
+					</button>
+				</fieldset>
+				<div class="popup-close">
+					<span></span>
+				</div>
+			</form>
+		</div>
 	</div>
 	<script src="js/main.js"></script>
 </body>
